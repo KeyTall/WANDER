@@ -1,0 +1,48 @@
+/*prints location of avatar*/
+#counter {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+
+	font-family: arial;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	/*@media*/
+	z-index: 2;	
+}
+
+/*main music*/
+.music_player {
+	display: flex;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	
+}
+
+#play, #pause {
+	background-color: transparent;
+	border: none; 
+	box-shadow: none; 
+	
+	background-size: 40px;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	
+	position: relative;
+	right: 10px;
+	bottom: 10px;
+	/*@media*/
+}
+
+#play {
+	display: none;
+	background-image: url("../Icons/volume off.png");
+}
+
+#pause {
+	background-image: url("../Icons/volume on.png");
+}

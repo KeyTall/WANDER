@@ -1,0 +1,25 @@
+@import url('http://fonts.cdnfonts.com/css/pixel-art');
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+@import url('http://fonts.cdnfonts.com/css/cyberx-font');
+
+@font-face {
+    font-family: 'Common Pixel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Common Pixel'), url('https://fonts.cdnfonts.com/s/7553/COMMP___.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pixel-Art';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pixel-Art'), url('https://fonts.cdnfonts.com/s/7368/pixelart.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CyberX-font';
+    font-style: normal;
+    font-weight: 400;
+    src: local('CyberX-font'), url('https://fonts.cdnfonts.com/s/33036/Cyber-X.woff') format('woff');
+}
+

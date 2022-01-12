@@ -1,0 +1,60 @@
+
+
+#avatar {
+	position: absolute;
+	
+	z-index: 1;
+}
+
+/*npc*/
+.cuteGirl {
+	position: absolute;
+	left: 1050px;
+	top: 550px;
+}
+
+#cuteGirl_avt {
+	width: 75px;
+	height: 75px;
+}
+
+#chatIndicator {
+	position: absolute;
+	top:-40px;
+	right:-40px;
+	width: 50px;
+	height: auto;
+	display: none;
+	z-index: 3;
+}
+
+.chatOpt {z-index:3;}
+
+.chatOpt div {
+	width: 200px;
+	height: 100px;
+	background: white;
+	border-radius: 10%;
+	opacity: 90%;
+	display: none;
+	z-index: 4;
+}
+
+.chatOpt div:hover {background: grey; cursor: pointer;}
+
+#opt1 p, #opt2 p, #opt3 p {
+	font-family: 'CyberX-font', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	word-wrap: break-word;
+	margin: 0;
+	width: 175px;
+}
+
+#opt1 p { padding: 30px 15px;}
+#opt2 p { padding: 5px 15px;}
+#opt3 p { padding: 15px 15px;}
+
+#opt1 {position: absolute; left: -200px; top: -75px;}
+#opt2 {position: absolute; top:-200px; left: -50px;}
+#opt3 {position: absolute; right:-200px; top: -75px;}

@@ -1,0 +1,116 @@
+.titleScreen {
+	position: absolute;
+	margin: 100px 250px;
+	z-index: 4;
+}
+
+.screenContents {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#background {
+	background: grey;
+	width: 100%;
+	height: 100%;
+}
+
+#blackScreen {
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+}
+
+/*play button*/
+#playButton {
+	position: absolute;
+	bottom: 30px;
+	right: 100px;
+	width: 300px;
+	height: 75px;
+	background: white;
+	border: 10px black solid;
+}
+
+#playButton:hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+#playButton p {
+	margin: 2px;
+	text-align: center;
+	font-family: 'Common Pixel', sans-serif;
+	font-size: 60px;
+}
+
+/*title*/
+#title {
+	position: absolute;
+	left: 250px;
+	font-size: 100px;
+	font-family:  'Common Pixel', sans-serif;
+	margin-top: 200px;
+	color: white;
+}
+
+.controls {
+	width: 100%;
+	height: 100%;
+	display:none;
+}
+
+.controls img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+
+/*controls button*/
+#controlsButton {
+	position: absolute;
+	bottom: 120px;
+	right: 100px;
+	width: 200px;
+	height: 50px;
+	background: white;
+	border: 10px black solid;
+}
+
+#controlsButton:hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+#controlsButton p {
+	margin-top: 5px;
+	text-align: center;
+	font-family: 'Common Pixel', sans-serif;
+	font-size: 35px;
+}
+
+/*menu button*/
+#menuButton {
+	position: absolute;
+	bottom: 50px;
+	right: 100px;
+	width: 200px;
+	height: 50px;
+	background: white;
+	border: 10px black solid;
+}
+
+#menuButton:hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+#menuButton p {
+	margin-top: 5px;
+	text-align: center;
+	font-family: 'Common Pixel', sans-serif;
+	font-size: 35px;
+}

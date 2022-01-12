@@ -1,0 +1,61 @@
+.textBox {
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	width: 96%;
+	height: 35%;
+	display: none;
+}
+
+#box {
+	width: 98%;
+	height: 90%;
+	background: tan;
+	opacity: 100%;
+	border: 10px black solid;
+	opacity: 80%;
+}
+
+#continueIndicator {
+	position: absolute;
+	right: -10px;
+	bottom: -7px;
+	width: 50px;
+	height: auto;
+}
+
+#continueIndicator:hover {
+	cursor: pointer;
+	width: 60px;
+}
+
+#pfp{
+	position: absolute;
+	left:5%;
+	top:-10%;
+	width: 17%;
+	height: auto;
+	border: 10px black solid;
+}
+
+#name {
+	position: absolute;
+	top:10%;
+	left:25%;
+	margin: 0;
+	color: black;
+	font-family: 'Common Pixel', sans-serif;
+	font-size: 40px;
+}
+
+#dialogue {
+	position: absolute;
+	top:35%;
+	left:30%;
+	width: 600px;
+	margin: 0;
+	color: white;
+	font-family: 'CyberX-font', sans-serif;;
+	font-size: 30px;
+	word-wrap: break-word;
+}

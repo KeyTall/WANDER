@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<title>WANDER</title>
+	<link href="style/fonts.css" rel="stylesheet">
+	<script src="jquery-3.6.0.min.js"></script>
+
+	<!--STYLING-->
+	<link href="style/gameWindow.css" type="text/css" rel="stylesheet"/>
+	<link href="style/characters.css" type="text/css" rel="stylesheet"/>
+	<link href="style/textBox.css" type="text/css" rel="stylesheet"/>
+	<link href="style/ui.css" type="text/css" rel="stylesheet"/>
+
+	<!--FRAME WORK-->
+	<script src="frame work/avatarPosition.js"></script>
+	<script src="frame work/movement.js"></script>
+	<script src="frame work/init_var.js"></script>
+	<script src="frame work/obj_InNextCell.js"></script>
+	<script src="frame work/define_borders.js"></script>
+	<script src="frame work/BST_objectCords.js"></script>
+	<script src="frame work/avatarAnimation.js"></script>
+	
+	<!--INTERACTIONS-->
+	<script src="interactions/sound_effects.js"></script>
+	<script src="interactions/chat.js"></script>
+	<script src="interactions/jsonFunctions.js"></script>
+	<script src="music.js"></script>
+
+	<!--Title Screen-->
+	<link href="titleScreen/titleScreen.css" type="text/css" rel="stylesheet"/>
+	<script src="titleScreen/titleScreen.js"></script>
+	
+</head>
+
+<!--BACKGROUND MUSIC-->
+<audio id="player">
+	<source src="background_music.mp3" type="audio/mpeg">
+</audio>
+
+<body onKeyDown="getKeyAndMove(event)" onKeyUp="clearTimer()"> 
+<!--put boxes around character and then remove-->
+
+<!--TITLE SCREEN-->
+<div class="titleScreen">
+
+	<div id="blackScreen"></div>
+	<div class="screenContents">
+		<div onclick="showControls()" id="controlsButton"><p>Controls</p></div>
+		<div id="background"></div>
+		<div onclick="playGame()" id="playButton"><p>Play</p></div>
+	</div>
+	<p id="title">WANDER</p>
+
+	<div class="controls">
+		<img src="controlMenu.png"/>
+		<div onclick="showMenu()" id="menuButton"><p>Menu</p></div>
+	</div>
+
+</div>
+
+<!--GAME WINDOW-->
+<div class="windowScreen">
+	
+	<div id="counter"></div>
+	
+	<!--MUSIC PLAYER-->
+	<div class="music_player">
+		<button id="play" onclick="play()"></button>
+		<button id="pause" onclick="pause()"></button>
+		
+		<form onchange="volume()" id="volSlider">
+			<input type="range" name="volumeValue" min="0" max="100" value="100"></input>
+		</form>
+	
+	</div>
+
+	<!--Text Box-->
+	<div class="textBox">
+		<div id="box"></div>
+		<img id="continueIndicator" src="Icons/Q.png" onclick="runConvo()"/>
+		<img id="pfp"/>
+		<h1 id="name"></h1>
+		<p  id="dialogue"></p>
+	</div>
+</div>
+
+<div class="gameWindow">	
+	
+	<!--MAP and AVATAR-->
+	<img id="map_overlay" src="PIXEL ART/Terrain/map_overlay.png"/>
+	<img id="map" src="PIXEL ART/Terrain/map.png"/>
+	<img id="avatar"/>
+
+	<!--npcs-->
+	<div class="cuteGirl">
+		<img id="cuteGirl_avt" src="PIXEL ART/Girl NPC/cute girl.png"/>
+		<img id="chatIndicator" src="Icons/Q.png"/>
+		<div class="chatOpt">
+			<div id="opt1" onclick="userInputBoxes(1)"><p></p></div>
+			<div id="opt2" onclick="userInputBoxes(2)"><p></p></div>
+			<div id="opt3" onclick="userInputBoxes(3)"><p></p></div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

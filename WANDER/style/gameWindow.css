@@ -1,0 +1,32 @@
+.gameWindow {
+	display: grid;
+	position: absolute;
+	background: #d0dbb6;
+	margin: 100px 250px; 
+	overflow: hidden;
+}
+
+/*put ontop on game window to avoid using embeded scroll bars*/
+.windowScreen {
+	position: absolute;
+	margin: 100px 250px;
+	
+	z-index: 3;
+}
+
+/*MAP*/
+#map {
+	position: absolute;
+	object-fit: cover;
+	width: 1500px;
+	height: 1500px;
+}
+
+#map_overlay {
+	position: absolute;
+	object-fit: cover;
+	width: 1500px;
+	height: 1500px;
+	
+	z-index: 2;
+}
